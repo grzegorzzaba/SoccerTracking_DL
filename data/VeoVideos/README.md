@@ -1,5 +1,14 @@
 ### Veo videos
 
+Installation of ffmpeg tool under wsl ubuntu linux distribution:
+
+```
+sudo add-apt-repository ppa:mc3man/trusty-media
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install ffmpeg
+```
+
 Videos contained there are Veo Videos used for models validation, to ensure that player detection and tracking is wokrking properly. The 30 second slices of videos were extracted from web with use of ffmpeg tool as follows:
 
 ```
