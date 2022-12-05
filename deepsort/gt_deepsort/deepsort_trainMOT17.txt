@@ -1,0 +1,154 @@
+(soccernet) C:\Users\Thomas\soccernet\SN_TRACKING_ROOT>python tools/evaluate_soccernet_v3_tracking.py --BENCHMARK SNMOT --DO_PREPROC False --SEQMAP_FILE tools/SNMOT-train.txt --TRACKERS_TO_EVAL train --SPLIT_TO_EVAL train --OUTPUT_SUB_FOLDER eval_results --TRACKERS_FOLDER_ZIP soccernet_mot_results.zip --GT_FOLDER_ZIP gt.zip
+
+Eval Config:
+USE_PARALLEL         : False
+NUM_PARALLEL_CORES   : 8
+BREAK_ON_ERROR       : True
+RETURN_ON_ERROR      : False
+LOG_ON_ERROR         : C:\Users\Thoma\soccernet\lib\site-packages\error_log.txt
+PRINT_RESULTS        : True
+PRINT_ONLY_COMBINED  : False
+PRINT_CONFIG         : True
+TIME_PROGRESS        : True
+DISPLAY_LESS_PROGRESS : False
+OUTPUT_SUMMARY       : True
+OUTPUT_EMPTY_CLASSES : True
+OUTPUT_DETAILED      : True
+PLOT_CURVES          : True
+
+MotChallenge2DBox Config:
+PRINT_CONFIG         : True
+GT_FOLDER            : ./temp/gt
+TRACKERS_FOLDER      : ./temp
+OUTPUT_FOLDER        : None
+TRACKERS_TO_EVAL     : ['train']
+CLASSES_TO_EVAL      : ['pedestrian']
+BENCHMARK            : SNMOT
+SPLIT_TO_EVAL        : train
+INPUT_AS_ZIP         : False
+DO_PREPROC           : False
+TRACKER_SUB_FOLDER   : data
+OUTPUT_SUB_FOLDER    : eval_results
+TRACKER_DISPLAY_NAMES : None
+SEQMAP_FOLDER        : None
+SEQMAP_FILE          : tools/SNMOT-train.txt
+SEQ_INFO             : None
+GT_LOC_FORMAT        : {gt_folder}/{seq}/gt/gt.txt
+SKIP_SPLIT_FOL       : False
+
+CLEAR Config:
+METRICS              : ['HOTA', 'CLEAR', 'Identity']
+THRESHOLD            : 0.5
+PRINT_CONFIG         : True
+
+Identity Config:
+METRICS              : ['HOTA', 'CLEAR', 'Identity']
+THRESHOLD            : 0.5
+PRINT_CONFIG         : True
+
+Evaluating 1 tracker(s) on 7 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating train
+
+    MotChallenge2DBox.get_raw_seq_data(train, MOT17-02-SDP)                0.2142 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.0808 sec
+    HOTA.eval_sequence()                                                   0.1756 sec
+    CLEAR.eval_sequence()                                                  0.0316 sec
+    Identity.eval_sequence()                                               0.0114 sec
+    Count.eval_sequence()                                                  0.0000 sec
+1 eval_sequence(MOT17-02-SDP, train)                                     0.5175 sec
+    MotChallenge2DBox.get_raw_seq_data(train, MOT17-04-SDP)                0.7205 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.1438 sec
+    HOTA.eval_sequence()                                                   0.3777 sec
+    CLEAR.eval_sequence()                                                  0.0656 sec
+    Identity.eval_sequence()                                               0.0241 sec
+    Count.eval_sequence()                                                  0.0000 sec
+2 eval_sequence(MOT17-04-SDP, train)                                     1.3403 sec
+    MotChallenge2DBox.get_raw_seq_data(train, MOT17-05-SDP)                0.1111 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.0958 sec
+    HOTA.eval_sequence()                                                   0.2125 sec
+    CLEAR.eval_sequence()                                                  0.0364 sec
+    Identity.eval_sequence()                                               0.0135 sec
+    Count.eval_sequence()                                                  0.0000 sec
+3 eval_sequence(MOT17-05-SDP, train)                                     0.4725 sec
+    MotChallenge2DBox.get_raw_seq_data(train, MOT17-09-SDP)                0.0873 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.0600 sec
+    HOTA.eval_sequence()                                                   0.1401 sec
+    CLEAR.eval_sequence()                                                  0.0213 sec
+    Identity.eval_sequence()                                               0.0083 sec
+    Count.eval_sequence()                                                  0.0000 sec
+4 eval_sequence(MOT17-09-SDP, train)                                     0.3195 sec
+    MotChallenge2DBox.get_raw_seq_data(train, MOT17-10-SDP)                0.1492 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.0780 sec
+    HOTA.eval_sequence()                                                   0.1802 sec
+    CLEAR.eval_sequence()                                                  0.0306 sec
+    Identity.eval_sequence()                                               0.0109 sec
+    Count.eval_sequence()                                                  0.0000 sec
+5 eval_sequence(MOT17-10-SDP, train)                                     0.4529 sec
+    MotChallenge2DBox.get_raw_seq_data(train, MOT17-11-SDP)                0.1272 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.1055 sec
+    HOTA.eval_sequence()                                                   0.2464 sec
+    CLEAR.eval_sequence()                                                  0.0399 sec
+    Identity.eval_sequence()                                               0.0140 sec
+    Count.eval_sequence()                                                  0.0000 sec
+6 eval_sequence(MOT17-11-SDP, train)                                     0.5383 sec
+    MotChallenge2DBox.get_raw_seq_data(train, MOT17-13-SDP)                0.1554 sec
+    MotChallenge2DBox.get_preprocessed_seq_data(pedestrian)                0.0950 sec
+    HOTA.eval_sequence()                                                   0.2041 sec
+    CLEAR.eval_sequence()                                                  0.0378 sec
+    Identity.eval_sequence()                                               0.0149 sec
+    Count.eval_sequence()                                                  0.0000 sec
+7 eval_sequence(MOT17-13-SDP, train)                                     0.5109 sec
+
+All sequences for train finished in 4.15 seconds
+
+HOTA: train-pedestrian             HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      RHOTA     HOTA(0)   LocA(0)   HOTALocA(0)
+MOT17-02-SDP                       27.479    35.871    21.247    42.26     63.757    28.567    41.803    82.272    29.905    34.91     74.555    26.027
+MOT17-04-SDP                       58.264    60.832    55.975    64.998    82.225    64.071    70.091    85.462    60.312    70.494    82.375    58.07
+MOT17-05-SDP                       36.647    49.015    27.579    54.502    73.559    56.472    34.021    82.342    38.736    47.657    76.697    36.551
+MOT17-09-SDP                       45.663    53.569    38.939    57.21     82.313    54.977    52.885    86.582    47.192    55.063    83.491    45.973
+MOT17-10-SDP                       46.548    55.316    39.362    61.413    74.773    50.343    56.198    82.31     49.153    59.909    77.283    46.3
+MOT17-11-SDP                       54.129    59.484    49.36     64.915    81.314    59.21     69.94     86.888    56.603    64.304    83.982    54.004
+MOT17-13-SDP                       45.943    42.106    50.47     47.329    69.809    65.477    59.017    81.385    48.826    58.831    75.404    44.361
+COMBINED                           49.246    52.554    46.385    57.971    76.854    57.127    61.359    84.327    51.831    60.57     79.946    48.423
+
+CLEAR: train-pedestrian            MOTA      MOTP      MODA      CLR_Re    CLR_Pr    MTR       PTR       MLR       sMOTA     CLR_TP    CLR_FN    CLR_FP    IDSW      MT        PT        ML        Frag
+MOT17-02-SDP                       33.19     80.46     34.605    50.444    76.104    16.129    59.677    24.194    23.333    9373      9208      2943      263       10        37        15        445
+MOT17-04-SDP                       74.025    83.143    74.317    76.683    97.007    54.217    31.325    14.458    61.098    36468     11089     1125      139       45        26        12        379
+MOT17-05-SDP                       57.742    79.884    59.086    66.59     89.873    23.308    64.662    12.03     44.347    4606      2311      519       93        31        86        16        168
+MOT17-09-SDP                       62.141    85.355    62.967    66.235    95.299    38.462    57.692    3.8462    52.441    3527      1798      174       44        10        15        1         63
+MOT17-10-SDP                       65.021    80.008    66.275    74.204    90.346    52.632    42.105    5.2632    50.186    9527      3312      1018      161       30        24        3         274
+MOT17-11-SDP                       67.592    85.4      68.154    73.993    92.686    37.333    48        14.667    56.789    6982      2454      551       53        28        36        11        124
+MOT17-13-SDP                       47.664    78.729    48.763    58.28     85.962    42.727    20.909    36.364    35.267    6785      4857      1108      128       47        23        40        187
+COMBINED                           61.399    82.154    62.183    68.807    91.219    36.813    45.238    17.949    49.12     77268     35029     7438      881       201       247       98        1640
+
+Identity: train-pedestrian         IDF1      IDR       IDP       IDTP      IDFN      IDFP
+MOT17-02-SDP                       35.453    29.476    44.471    5477      13104     6839
+MOT17-04-SDP                       70.22     62.864    79.525    29896     17661     7697
+MOT17-05-SDP                       40.674    35.406    47.785    2449      4468      2676
+MOT17-09-SDP                       53.734    45.54     65.523    2425      2900      1276
+MOT17-10-SDP                       58.219    53.018    64.552    6807      6032      3738
+MOT17-11-SDP                       61.111    54.949    68.83     5185      4251      2348
+MOT17-13-SDP                       54.712    45.903    67.706    5344      6298      2549
+COMBINED                           58.459    51.277    67.98     57583     54714     27123
+
+Count: train-pedestrian            Dets      GT_Dets   IDs       GT_IDs
+MOT17-02-SDP                       12316     18581     65        62
+MOT17-04-SDP                       37593     47557     86        83
+MOT17-05-SDP                       5125      6917      73        133
+MOT17-09-SDP                       3701      5325      27        26
+MOT17-10-SDP                       10545     12839     63        57
+MOT17-11-SDP                       7533      9436      82        75
+MOT17-13-SDP                       7893      11642     73        110
+COMBINED                           84706     112297    469       546
+
+Timing analysis:
+MotChallenge2DBox.get_raw_seq_data                                     1.5647 sec
+MotChallenge2DBox.get_preprocessed_seq_data                            0.6590 sec
+HOTA.eval_sequence                                                     1.5367 sec
+CLEAR.eval_sequence                                                    0.2631 sec
+Identity.eval_sequence                                                 0.0970 sec
+Count.eval_sequence                                                    0.0000 sec
+eval_sequence                                                          4.1519 sec
+Evaluator.evaluate                                                     5.5010 sec
