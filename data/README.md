@@ -1,0 +1,1 @@
+Apart from data contained in this folder, different datasets were used for detectors tuning, as e.g. COCO or PASCAL datasets for image detection. They were handled differently for each detector, since the detectors required different format of data input for training and examination.
