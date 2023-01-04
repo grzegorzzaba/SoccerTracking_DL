@@ -10,6 +10,6 @@ conda create -n SoccerNet python pip
 pip install SoccerNet
 ```
 
-and ***soccer.py*** script will download the dataset.
+and running ***soccer.py*** script will download the dataset.
 
 The data may be visualised by unpacking zip files and selecting proper folder as an input to the function contained in tools folder, using the ***visualization.py*** script in __tools__ subfolder of this repository.
